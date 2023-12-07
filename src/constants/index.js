@@ -1,4 +1,4 @@
-const monthOptions = [
+export const monthOptions = [
   { value: '1', label: '1 月' },
   { value: '2', label: '2 月' },
   { value: '3', label: '3 月' },
@@ -12,5 +12,3 @@ const monthOptions = [
   { value: '11', label: '11 月' },
   { value: '12', label: '12 月' }
 ]
-
-export default monthOptions

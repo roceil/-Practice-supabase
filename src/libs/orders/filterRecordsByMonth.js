@@ -1,4 +1,3 @@
-// filterRecordsByMonth.js
 import dayjs from 'dayjs'
 
 /**

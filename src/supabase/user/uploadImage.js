@@ -7,12 +7,11 @@ import supabase from '@/supabase'
  * @returns {Promise<void>} - 上傳圖片的結果
  */
 
-const uploadImage = async (name, file) => {
+const uploadImage = async (file, name) => {
   const { error: uploadError } = await supabase.storage.from('avatars').upload(name, file)
 
   if (uploadError) {
-    alert(uploadError.message)
-    return
+    throw new Error(uploadError)
   }
 }
 

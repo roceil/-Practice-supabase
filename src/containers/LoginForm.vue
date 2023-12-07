@@ -1,9 +1,9 @@
 <script setup>
 import { reactive } from "vue";
 import { useRouter } from "vue-router";
-import FormInput from "../components/FormInput.vue";
-import login from "../composable/auth/login";
-import setUserId from "../libs/setUserId";
+import login from "@/supabase/auth/login";
+import FormInput from "@/components/FormInput.vue";
+import setUserId from "@/libs/setUserId";
 
 const emits = defineEmits(["sign-up"]);
 

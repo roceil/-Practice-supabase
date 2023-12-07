@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest'
-import getUser from '@/composable/auth/getUser'
+import getUser from '@/supabase/auth/getUser'
 
 // 模擬 supabase 以涵蓋成功和失敗的案例
 vi.mock('@/supabase', () => {

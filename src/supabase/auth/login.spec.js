@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest'
-import login from '@/composable/auth/login'
+import login from '@/supabase/auth/login'
 
 // mock supabase
 vi.mock('@/supabase', () => {

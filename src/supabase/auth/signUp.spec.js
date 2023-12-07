@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest'
-import signUp from '@/composable/auth/signUp'
+import signUp from '@/supabase/auth/signUp'
 
 vi.mock('@/supabase', () => {
   const mockSignUp = vi.fn(({ email }) => {

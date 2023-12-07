@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import formatDate from '../libs/formatDate'
+import formatDate from '@/libs/formatDate'
 
 describe('formatDate', () => {
   it('回傳日期格式：YYYY-MM-DD', () => {

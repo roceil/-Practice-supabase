@@ -1,10 +1,10 @@
 <script setup>
 import { reactive, computed } from "vue";
 import dayjs from "dayjs";
-import RecordItem from "../components/RecordItem.vue";
-import clearOrder from "../composable/record/clearOrder";
-import countTotal from "../composable/record/countTotal";
-import addRecord from "../composable/record/addRecord";
+import addRecord from "@/supabase/record/addRecord";
+import RecordItem from "@/components/RecordItem.vue";
+import clearOrder from "@/libs/record/clearOrder";
+import countTotal from "@/libs/record/countTotal";
 
 // 取得今天日期
 const today = dayjs().format("YYYY-MM-DD");

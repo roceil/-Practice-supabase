@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest'
-import insertUser from '@/composable/user/insertUser'
+import insertUser from '@/supabase/user/insertUser'
 
 // 模拟 supabase
 vi.mock('@/supabase', () => {

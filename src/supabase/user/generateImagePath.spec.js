@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import generateImagePath from '@/composable/user/generateImagePath'
+import generateImagePath from '@/supabase/user/generateImagePath'
 
 // 模擬 supabase
 vi.mock('@/supabase', () => {

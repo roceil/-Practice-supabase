@@ -1,9 +1,9 @@
 <script setup>
 import { reactive } from "vue";
-import FormInput from "../components/FormInput.vue";
-import formValid from "../libs/formValid";
-import signUp from "../composable/auth/signUp";
-import insertUser from "../composable/user/insertUser";
+import FormInput from "@/components/FormInput.vue";
+import formValid from "@/libs/formValid";
+import signUp from "@/supabase/auth/signUp";
+import insertUser from "@/supabase/user/insertUser";
 
 const emits = defineEmits(["login"]);
 

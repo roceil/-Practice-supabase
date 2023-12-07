@@ -1,10 +1,10 @@
 <script setup>
 import { reactive, computed, onMounted, ref } from "vue";
-import getUser from "../composable/auth/getUser";
-import getUserId from "../libs/getUserId";
-import uploadImage from "../composable/user/uploadImage";
-import updateImagePath from "../composable/user/updateImagePath";
-import generateImagePath from "../composable/user/generateImagePath";
+import getUser from "@/supabase/auth/getUser";
+import uploadImage from "@/supabase/user/uploadImage";
+import updateImagePath from "@/supabase/user/updateImagePath";
+import generateImagePath from "@/supabase/user/generateImagePath";
+import getUserId from "@/libs/getUserId";
 
 // user 初始值
 const user = reactive({
@@ -51,6 +51,7 @@ const handleUploadImage = async (e) => {
 
     alert("更換圖片成功");
   } catch (error) {
+    console.log(error);
     alert("更換圖片失敗");
   }
 };

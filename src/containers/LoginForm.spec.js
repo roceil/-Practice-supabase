@@ -2,10 +2,10 @@ import { describe, it, expect, vi } from 'vitest'
 import { mount } from '@vue/test-utils'
 import { createRouter, createMemoryHistory } from 'vue-router'
 import LoginForm from '@/containers/LoginForm.vue'
-import login from '@/composable/auth/login'
+import login from '@/supabase/auth/login'
 
 // 模擬 login function
-vi.mock('@/composable/auth/login', () => {
+vi.mock('@/supabase/auth/login', () => {
   return {
     default: vi.fn() // 模擬函數
   }

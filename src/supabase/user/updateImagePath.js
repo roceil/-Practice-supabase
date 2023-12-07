@@ -14,8 +14,7 @@ const updateImagePath = async (newImageUrl, userId) => {
     .eq('id', userId)
 
   if (error) {
-    alert(error.message)
-    return
+    throw new Error(error)
   }
 
   return data

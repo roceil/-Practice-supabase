@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import isPaid from '../libs/isPaid'
+import isPaid from '@/libs/isPaid'
 
 describe('isPaid', () => {
   it('回應『已付款』', () => {

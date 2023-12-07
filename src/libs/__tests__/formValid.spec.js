@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest'
-import formValid from '../libs/formValid'
+import formValid from '@/libs/formValid'
 
 describe('formValid 函數測試', () => {
   let originalAlert

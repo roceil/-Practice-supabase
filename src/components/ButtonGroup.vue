@@ -27,6 +27,7 @@ const buttonData = reactive([
     status: "paid",
   },
 ]);
+
 </script>
 
 <template>

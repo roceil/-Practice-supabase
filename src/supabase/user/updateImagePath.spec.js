@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest'
-import updateImagePath from '@/composable/user/updateImagePath'
+import updateImagePath from '@/supabase/user/updateImagePath'
 
 // mock supabase
 vi.mock('@/supabase', () => {

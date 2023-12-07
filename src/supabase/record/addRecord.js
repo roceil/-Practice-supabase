@@ -1,6 +1,6 @@
 import supabase from '@/supabase'
-import createRecordNumber from './createRecordNumber'
-import getUserId from '../../libs/getUserId'
+import createRecordNumber from '@/libs/record/createRecordNumber'
+import getUserId from '@/libs/getUserId'
 
 // 記錄編號
 const recordNumber = createRecordNumber()

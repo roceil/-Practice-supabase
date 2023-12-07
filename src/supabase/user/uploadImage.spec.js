@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeAll, afterAll } from 'vitest'
-import uploadImage from '@/composable/user/uploadImage'
+import uploadImage from '@/supabase/user/uploadImage'
 
 // mock supabase
 vi.mock('@/supabase', () => {
@@ -7,7 +7,7 @@ vi.mock('@/supabase', () => {
     default: {
       storage: {
         from: () => ({
-          upload: (name) => {
+          upload: (file, name) => {
             if (name === 'test.png') {
               return Promise.resolve({ data: null, error: null })
             } else {

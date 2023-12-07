@@ -1,5 +1,5 @@
 <script setup>
-import RecordForm from "../containers/RecordForm.vue";
+import RecordForm from "@/containers/RecordForm.vue";
 </script>
 
 <template>
